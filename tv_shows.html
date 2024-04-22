@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BullFlix - TV Shows</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BullFlix</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv_shows.html">TV Shows</a></li>
+                <li><a href="documentaries.html">Documentaries</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tv-show-list">
+            <h2>Bulls TV Show Recommendations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bull of Thrones</td>
+                        <td>Fantasy, Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                        <td>A bull's epic journey to claim the throne.</td>
+                        <td>
+                            <button onclick="editTVShow(1)">Edit</button>
+                            <button onclick="deleteTVShow(1)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>The Bull Bang Theory</td>
+                        <td>Comedy</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>A group of brilliant bulls navigating the complexities of modern ranch life.</td>
+                        <td>
+                            <button onclick="editTVShow(2)">Edit</button>
+                            <button onclick="deleteTVShow(2)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>3</td>
+                        <td>Bull Call Saul</td>
+                        <td>Crime, Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>A bull lawyer's journey into the criminal underworld.</td>
+                        <td>
+                            <button onclick="editTVShow(3)">Edit</button>
+                            <button onclick="deleteTVShow(3)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bulls Anatomy</td>
+                        <td>Drama, Romance</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>Life, love, and drama in a bustling cattle ranch hospital.</td>
+                        <td>
+                            <button onclick="editTVShow(4)">Edit</button>
+                            <button onclick="deleteTVShow(4)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>5</td>
+                        <td>The Walking Bull</td>
+                        <td>Horror, Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>Surviving the apocalypse as a herd of determined bulls.</td>
+                        <td>
+                            <button onclick="editTVShow(5)">Edit</button>
+                            <button onclick="deleteTVShow(5)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>6</td>
+                        <td>Breaking Bull</td>
+                        <td>Crime, Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>A high-stakes tale of drugs, money, and power in the world of cattle ranching.</td>
+                        <td>
+                            <button onclick="editTVShow(6)">Edit</button>
+                            <button onclick="deleteTVShow(6)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>7</td>
+                        <td>Stranger Bulls</td>
+                        <td>Mystery, Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>A mysterious stranger disrupts the peaceful lives of a group of bulls.</td>
+                        <td>
+                            <button onclick="editTVShow(7)">Edit</button>
+                            <button onclick="deleteTVShow(7)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>8</td>
+                        <td>Bull Mirror</td>
+                        <td>Drama, Fantasy</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>A surreal journey through the reflections of a bull's mind.</td>
+                        <td>
+                            <button onclick="editTVShow(8)">Edit</button>
+                            <button onclick="deleteTVShow(8)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>9</td>
+                        <td>Bulls of Anarchy</td>
+                        <td>Crime, Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>A bull motorcycle club navigates the treacherous paths of the outlaw world.</td>
+                        <td>
+                            <button onclick="editTVShow(9)">Edit</button>
+                            <button onclick="deleteTVShow(9)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                    <tr>
+                        <td>10</td>
+                        <td>House of Bulls</td>
+                        <td>Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>Intrigue, politics, and power struggles in the halls of a powerful ranching family.</td>
+                        <td>
+                            <button onclick="editTVShow(10)">Edit</button>
+                            <button onclick="deleteTVShow(10)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more TV show recommendations here -->
+                </tbody>
+            </table>
+            <button onclick="addTVShow()">Add TV Show</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BullFlix. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addTVShow() {
+            // Implement logic to add a new TV show
+        }
+
+        function editTVShow(id) {
+            // Implement logic to edit a TV show with the given id
+        }
+
+        function deleteTVShow(id) {
+            // Implement logic to delete a TV show with the given id
+        }
+    </script>
+</body>
+</html>
