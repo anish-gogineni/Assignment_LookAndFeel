@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BullFlix - Movies</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BullFlix - Movies</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -83,7 +88,7 @@
                     <tr>
                         <td>5</td>
                         <td>Bull Runner</td>
-                        <td>Action</td>
+                        <td>Thriller</td>
                         <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
                         <td>A bull must outrun the law to clear his name and prove his innocence.</td>
                         <td>
@@ -95,7 +100,7 @@
                     <tr>
                         <td>6</td>
                         <td>Indiana Bull and the Temple of Moo</td>
-                        <td>Action</td>
+                        <td>Thriller</td>
                         <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
                         <td>Follow the adventures of Indiana Bull in search of the legendary Temple of Moo.</td>
                         <td>
@@ -131,7 +136,7 @@
                     <tr>
                         <td>9</td>
                         <td>Bull Runner: Fury Road</td>
-                        <td>Adventure</td>
+                        <td>Thriller</td>
                         <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
                         <td>Join Bull Runner on a high-speed chase through the desert wasteland.</td>
                         <td>
@@ -155,6 +160,14 @@
                 </tbody>
             </table>
             <button onclick="addMovie()">Add Movie</button>
+            <br><br><br>
+        </section>
+
+        <section class="movie-list">
+            <h2>Bulls Movies by Genre</h2>
+            <!-- Add canvas element for the chart -->
+            <canvas id="genreChart" width="50" height="10"></canvas>
+            <!-- Rest of your movie list HTML -->
         </section>
     </main>
     <footer>
@@ -174,5 +187,98 @@
             // Implement logic to delete a movie with the given id
         }
     </script>
+
+
+<!-- adding a graph to the page -->
+    <script>
+        // Get the data for the chart
+        const genres = ["Drama", "Action", "Sci-Fi", "Comedy", "thriller"];
+        const movieCounts = [2, 1, 2, 1, 3]; // Example data, replace with actual counts
+
+        // Create a new Chart instance
+        const ctx = document.getElementById('genreChart').getContext('2d');
+        const genreChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: genres,
+                datasets: [{
+                    label: 'Number of Movies',
+                    data: movieCounts,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'x',
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Genres',
+                            color: 'rgba(0, 0, 0, 0.7)',
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            }
+                        },
+                        beginAtZero: true,
+                        ticks: {
+                            color: 'rgba(0, 0, 0, 0.7)',
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            }
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Number of Movies',
+                            color: 'rgba(0, 0, 0, 0.7)',
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            }
+                        },
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            color: 'rgba(0, 0, 0, 0.7)',
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- Add a few empty lines -->
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+
 </body>
 </html>
