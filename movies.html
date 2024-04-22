@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BullFlix - Movies</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BullFlix</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv_shows.html">TV Shows</a></li>
+                <li><a href="documentaries.html">Documentaries</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="movie-list">
+            <h2>Bulls Movie Recommendations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>The Bullfather</td>
+                        <td>Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>A bull's rise to power in the underworld of cattle ranching.</td>
+                        <td>
+                            <button onclick="editMovie(1)">Edit</button>
+                            <button onclick="deleteMovie(1)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bulls of the Caribbean</td>
+                        <td>Action, Adventure</td>
+                        <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+                        <td>A group of brave bulls sets sail on an epic adventure to find treasure.</td>
+                        <td>
+                            <button onclick="editMovie(2)">Edit</button>
+                            <button onclick="deleteMovie(2)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>3</td>
+                        <td>Bull Wars: The Force Awakens</td>
+                        <td>Sci-Fi, Action</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>The saga continues as bulls battle for the fate of the galaxy.</td>
+                        <td>
+                            <button onclick="editMovie(3)">Edit</button>
+                            <button onclick="deleteMovie(3)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bull Fiction</td>
+                        <td>Crime, Thriller</td>
+                        <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+                        <td>A tale of crime and redemption, featuring a cast of bull characters.</td>
+                        <td>
+                            <button onclick="editMovie(4)">Edit</button>
+                            <button onclick="deleteMovie(4)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>5</td>
+                        <td>Bull Runner</td>
+                        <td>Action, Thriller</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                        <td>A bull must outrun the law to clear his name and prove his innocence.</td>
+                        <td>
+                            <button onclick="editMovie(5)">Edit</button>
+                            <button onclick="deleteMovie(5)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>6</td>
+                        <td>Indiana Bull and the Temple of Moo</td>
+                        <td>Action, Adventure</td>
+                        <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+                        <td>Follow the adventures of Indiana Bull in search of the legendary Temple of Moo.</td>
+                        <td>
+                            <button onclick="editMovie(6)">Edit</button>
+                            <button onclick="deleteMovie(6)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>7</td>
+                        <td>Bullfinger</td>
+                        <td>Action, Comedy</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>Double agents, espionage, and bulls - a recipe for laughter and excitement.</td>
+                        <td>
+                            <button onclick="editMovie(7)">Edit</button>
+                            <button onclick="deleteMovie(7)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>8</td>
+                        <td>The Bullinator</td>
+                        <td>Sci-Fi, Action</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>A cybernetic bull from the future is sent back in time to save the world.</td>
+                        <td>
+                            <button onclick="editMovie(8)">Edit</button>
+                            <button onclick="deleteMovie(8)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>9</td>
+                        <td>Bull Runner: Fury Road</td>
+                        <td>Action, Adventure</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>Join Bull Runner on a high-speed chase through the desert wasteland.</td>
+                        <td>
+                            <button onclick="editMovie(9)">Edit</button>
+                            <button onclick="deleteMovie(9)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                    <tr>
+                        <td>10</td>
+                        <td>Bulltoro</td>
+                        <td>Drama</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                        <td>A heartwarming story of friendship and determination, starring a brave young bull.</td>
+                        <td>
+                            <button onclick="editMovie(10)">Edit</button>
+                            <button onclick="deleteMovie(10)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more movie recommendations here -->
+                </tbody>
+            </table>
+            <button onclick="addMovie()">Add Movie</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BullFlix. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addMovie() {
+            // Implement logic to add a new movie
+        }
+
+        function editMovie(id) {
+            // Implement logic to edit a movie with the given id
+        }
+
+        function deleteMovie(id) {
+            // Implement logic to delete a movie with the given id
+        }
+    </script>
+</body>
+</html>
