@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #435d4e; /* Green theme */
+    color: #f1f5f1;
+    text-align: center; /* Align header to center */
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.movie-list {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #435d4e; /* Green theme */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed; /* Set footer position to fixed */
+    bottom: 0; /* Stick the footer to the bottom */
+    width: 100%; /* Set the width of the footer to 100% */
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.member {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.member p {
+    color: #666;
+}
+
+.member img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 15px;
+}
