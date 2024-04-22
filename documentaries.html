@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BullFlix - Documentaries</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BullFlix</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv_shows.html">TV Shows</a></li>
+                <li><a href="documentaries.html">Documentaries</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="documentary-list">
+            <h2>Bulls Documentary Recommendations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bulls in the Wild</td>
+                        <td>Nature, Wildlife</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>Exploration of the lives of wild bulls in their natural habitats.</td>
+                        <td>
+                            <button onclick="editDocumentary(1)">Edit</button>
+                            <button onclick="deleteDocumentary(1)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bulls: A History</td>
+                        <td>Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                        <td>A comprehensive look at the history and significance of bulls throughout time.</td>
+                        <td>
+                            <button onclick="editDocumentary(2)">Edit</button>
+                            <button onclick="deleteDocumentary(2)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>3</td>
+                        <td>Bulls and Beyond</td>
+                        <td>Science, Nature</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>Exploring the extraordinary abilities and behaviors of bulls.</td>
+                        <td>
+                            <button onclick="editDocumentary(3)">Edit</button>
+                            <button onclick="deleteDocumentary(3)">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>The Secret Life of Bulls</td>
+                        <td>Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>Revealing the hidden world of bulls and their social dynamics.</td>
+                        <td>
+                            <button onclick="editDocumentary(4)">Edit</button>
+                            <button onclick="deleteDocumentary(4)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>5</td>
+                        <td>Bulls: Legends of the Past</td>
+                        <td>History, Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>Profiles of legendary bulls and their impact on history.</td>
+                        <td>
+                            <button onclick="editDocumentary(5)">Edit</button>
+                            <button onclick="deleteDocumentary(5)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>6</td>
+                        <td>The Bull Code</td>
+                        <td>Science, Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>Decoding the mysteries of bull behavior and communication.</td>
+                        <td>
+                            <button onclick="editDocumentary(6)">Edit</button>
+                            <button onclick="deleteDocumentary(6)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>7</td>
+                        <td>Bulls: The Untold Stories</td>
+                        <td>Biography, Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>Uncovering the remarkable stories of individual bulls and their extraordinary lives.</td>
+                        <td>
+                            <button onclick="editDocumentary(7)">Edit</button>
+                            <button onclick="deleteDocumentary(7)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>8</td>
+                        <td>Inside the Bull's Mind</td>
+                        <td>Psychology, Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                        <td>Delving into the inner workings of a bull's brain and emotions.</td>
+                        <td>
+                            <button onclick="editDocumentary(8)">Edit</button>
+                            <button onclick="deleteDocumentary(8)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>9</td>
+                        <td>Bulls of the Sea</td>
+                        <td>Marine Life, Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        <td>Exploring the fascinating world of bulls that inhabit the ocean depths.</td>
+                        <td>
+                            <button onclick="editDocumentary(9)">Edit</button>
+                            <button onclick="deleteDocumentary(9)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                    <tr>
+                        <td>10</td>
+                        <td>Guardians of the Grasslands</td>
+                        <td>Conservation, Documentary</td>
+                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        <td>A journey into the efforts to protect and preserve bull habitats around the world.</td>
+                        <td>
+                            <button onclick="editDocumentary(10)">Edit</button>
+                            <button onclick="deleteDocumentary(10)">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more documentary recommendations here -->
+                </tbody>
+            </table>
+            <button onclick="addDocumentary()">Add Documentary</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BullFlix. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addDocumentary() {
+            // Implement logic to add a new documentary
+        }
+
+        function editDocumentary(id) {
+            // Implement logic to edit a documentary with the given id
+        }
+
+        function deleteDocumentary(id) {
+            // Implement logic to delete a documentary with the given id
+        }
+    </script>
+</body>
+</html>
